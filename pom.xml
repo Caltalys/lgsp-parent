@@ -71,6 +71,24 @@
 				<artifactId>mariadb-java-client</artifactId>
 				<version>${mariadb.version}</version>
 			</dependency>
+			
+			<!-- QueryDSL support -->		
+			<dependency>
+				<groupId>com.querydsl</groupId>
+				<artifactId>querydsl-apt</artifactId>
+				<version>${querydsl.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.querydsl</groupId>
+				<artifactId>querydsl-jpa</artifactId>
+				<version>${querydsl.version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>org.apache.commons</groupId>
+			    <artifactId>commons-lang3</artifactId>
+			    <version>${commons.lang3.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -89,5 +107,7 @@
 		<zk.version>8.5.0</zk.version>
 		<mariadb.version>2.2.4</mariadb.version>
 		<lombok.version>1.16.20</lombok.version>
+		<querydsl.version>4.2.1</querydsl.version>
+		<commons.lang3.version>3.7</commons.lang3.version>
 	</properties>
 </project>
