@@ -57,6 +57,11 @@
 				<artifactId>zkbind</artifactId>
 				<version>${zk.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.zkoss.zk</groupId>
+				<artifactId>zul</artifactId>
+				<version>${zk.version}</version>
+			</dependency>
 			<!-- == End ZK== -->
 
 			<!-- Lombok Project support -->	
@@ -91,14 +96,14 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	<build>
+	<!-- <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
+	</build> -->
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
