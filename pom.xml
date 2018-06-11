@@ -94,6 +94,11 @@
 			    <artifactId>commons-lang3</artifactId>
 			    <version>${commons.lang3.version}</version>
 			</dependency>
+			<dependency>
+			    <groupId>org.apache.shiro</groupId>
+			    <artifactId>shiro-core</artifactId>
+			    <version>${shiro.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<!-- <build>
@@ -114,5 +119,6 @@
 		<lombok.version>1.16.20</lombok.version>
 		<querydsl.version>4.2.1</querydsl.version>
 		<commons.lang3.version>3.7</commons.lang3.version>
+		<shiro.version>1.4.0</shiro.version>
 	</properties>
 </project>
