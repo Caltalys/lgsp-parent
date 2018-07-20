@@ -4,7 +4,7 @@
 	<groupId>vn.lgsp.fw</groupId>
 	<artifactId>lgsp-fw-parent</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>LGSP Application Framework for Java - Parent</name>
 	<description>The parent of LGSP Application Framework for Java</description>
 	<url>http://toancauxanh.vn</url>
@@ -116,7 +116,7 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
 					<configuration>
-						<encoding>UTF-8</encoding>
+						<encoding>${project.build.sourceEncoding}</encoding>
 						<overwrite>true</overwrite>
 					</configuration>
 				</plugin>
@@ -129,13 +129,16 @@
 					<artifactId>apt-maven-plugin</artifactId>
 					<executions>
 						<execution>
-							<phase>compile</phase>
+							<phase>generate-resources</phase>
 							<goals>
 								<goal>process</goal>
 							</goals>
 							<configuration>
 								<outputDirectory>target/generated-sources/annotations</outputDirectory>
 								<processor>com.querydsl.apt.jpa.JPAAnnotationProcessor</processor>
+								<packages>
+									<package>vn.lgsp.fw.core.domain</package>
+								</packages> 
 							</configuration>
 						</execution>
 					</executions>
