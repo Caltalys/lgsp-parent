@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>vn.lgsp.fw</groupId>
-	<artifactId>lgsp-fw-parent</artifactId>
+	<groupId>vn.lgsp</groupId>
+	<artifactId>lgsp-parent</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0.0</version>
 	<name>LGSP Application Framework for Java - Parent</name>
@@ -12,7 +12,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.13.RELEASE</version>
+		<version>1.5.15.RELEASE</version>
 	</parent>
 	
 	<licenses>
@@ -127,7 +127,7 @@
         		<plugin>
 					<groupId>com.mysema.maven</groupId>
 					<artifactId>apt-maven-plugin</artifactId>
-					<executions>
+					<!-- <executions>
 						<execution>
 							<phase>generate-resources</phase>
 							<goals>
@@ -137,11 +137,11 @@
 								<outputDirectory>target/generated-sources/annotations</outputDirectory>
 								<processor>com.querydsl.apt.jpa.JPAAnnotationProcessor</processor>
 								<packages>
-									<package>vn.lgsp.fw.core.domain</package>
+									<package>vn.lgsp.core.domain</package>
 								</packages> 
 							</configuration>
 						</execution>
-					</executions>
+					</executions> -->
 				</plugin>
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
